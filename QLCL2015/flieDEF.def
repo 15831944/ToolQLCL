@@ -1,0 +1,65 @@
+﻿LIBRARY "ToolQLCL"
+EXPORTS
+	Enter_RightClick							; Leo --> bổ sung 03.04.2018 từ DllQLCL.dll
+	open_in_HoSo								; Hộp thoại in hồ sơ
+	open_inleHoso								; Lệnh chuột phải in lẻ hồ sơ
+	open_in_NhatKy								; Hộp thoại in nhật ký
+	open_chen_dong								; Hộp thoại chèn dòng
+	open_in_sapxep								; Hộp thoại cho phép sắp xếp danh mục vật liệu /công việc
+	open_tracuu_tieuchuan						; Hộp thoại tra cứu tiêu chuẩn
+	open_importpic								; Hộp thoại chèn ảnh
+	open_luu_dmcviec							; Hộp thoại lưu định mức công việc
+	open_xuat_klg								; Hộp thoại xuất bảng khối lượng
+	open_ktra_nghile							; Hộp thoại kiểm tra ngày nghỉ lễ
+	open_chiphituvan							; Hộp thoại tổng hợp chi phí tư vấn
+	open_danh_ma_HSNT							; Hộp thoại đánh mã hồ sơ nghiệm thu (HSNT)
+	open_quycach_laymau							; Hộp thoại quy cách lấy mẫu ngang vs dọc
+	
+	call_even_enter								; Hàm kích enter trong bảng tính ----------------------------------
+	call_open_qlndNK							; Hàm gọi hộp thoại quản lý nội dung nhật ký
+	call_move_dmbban							; Hàm gọi dữ liệu sang danh mục biên bản
+	call_open_tracuu_dl							; Hàm gọi các hộp thoại tra cứu dữ liệu
+	call_create_dtmm							; Hàm tạo dự toán Man Month
+	call_delete_dtmm							; Hàm xóa dự toán Man Month
+	call_update_STTDM							; Hàm cập nhật lại số thứ tự danh mục mới (n=0,1,2)
+	call_save_nky								; Lưu dữ liệu nhật ký thi công -------------------------------------
+	call_nhap_hoi_ky							; Hàm xuất dữ liệu nhật ký
+	call_addimage_nky							; Thêm hình ảnh trong nhật ký thi công
+	call_truyen_shVL_nhapve						; Hàm đổ dữ liệu nhập về từ sheet danh mục vật liệu
+	call_autoFilter_VLNV						; Hàm lọc dữ liệu vật liệu nhập về
+	call_load_stt_bienban						; Hàm đánh lại số biên bản khi tác động sheet danh mục tương ứng
+	call_capnhat_stt							; Hàm cập nhật lại số thứ tự danh mục
+	call_truyenDL_sang_sh_dmHoSo				; Hàm truyền dữ liệu từ 3 danh mục con (VL,CV,GĐ) sang danh mục hồ sơ
+	call_imppic									; Hàm truyền dữ liệu ảnh
+	call_implinkpicsheet						; Hàm chèn link ảnh lên sheet danh mục giai đoạn
+	call_auto_date_bienban						; Hàm tự động thêm ngày tháng khi click Enter
+	call_import_dmvl							; Hàm import dữ liệu danh mục văn bản từ csv sang csdl mdb
+	call_import_xlsx							; Hàm load dữ liệu vật liệu từ file Excel (xls,xlsx)
+	call_import_cviec							; Hàm load dữ liệu công việc từ Excel	
+	call_rcl_cpcgia								; Hàm chuột phải hiển thị chi phí chuyên gia
+	call_db_dmanhmuc							; Hàm đồng bộ dữ liệu danh mục
+	call_printer								; Tiện ích in bảng tính khác
+	call_manager_sheet							; Quản lý bảng tính	
+	call_get_date								; Hàm lấy giá trị ngày trước khi thay đổi trong sheet DMVL và DMCV
+	call_get_time								; Hàm lấy giá trị thời gian
+	call_sheet_bsdtoan							; Hàm ẩn hiện các sheet bổ sung từ pm dự toán
+	call_hien_an_DL								; Hàm hiện ẩn chi tiết dữ liệu vật liệu / công việc
+	call_noilai_tieuchuan						; Hàm nối lại link tiêu chuẩn từ các bảng danh mục sang bảng tiêu chuẩn
+	call_open_them_nhanh_tc						; Hàm thêm nhanh nhóm tiêu chuẩn
+	call_danh_sach_name							; Hàm xem danh sách name trong bảng tính
+	call_selectCSDLNKy							; Hàm gọi danh sách các file lưu nhật ký
+	call_doc_tieuchuan							; Hàm đọc tiêu chuẩn từ phím tắt (Ctrl+Shift+D)
+	call_RClick_KyBB							; Chuột phải chọn ký biên bản
+	call_RClick_BangmauNT						; Chuột phải chọn bảng mẫu nghiệm thu	
+	call_ChonCSDLVLCV							; Chọn dữ liệu QLCL.mdb
+	call_tinhlaiDGKL							; Hàm tính lại diễn giải khối lượng
+	call_TinhdiengiaiME							; Hàm tính diễn giải theo cơ điện (ME)
+	call_Apdungbangmau							; Hàm áp dụng bảng mẫu
+	call_Nhanbanmau								; Hàm chuột phải sao chép bảng mẫu
+	call_ChangePathEx							; Hàm thay đổi đường dẫn thư mục dữ liệu
+	call_MOpenFile								; Hàm mở file tiêu chuẩn
+	call_MOpenFolder							; Hàm mở thư mục chứa file tiêu chuẩn	
+	call_null_sub								; Hàm rỗng
+
+	Get_CodeName
+	

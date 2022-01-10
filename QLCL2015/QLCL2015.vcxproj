@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2CC4C1B5-63D0-4747-A911-E1416BBBA8BA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>QLCL2015</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;QLCL2015_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>flieDEF.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;QLCL2015_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>flieDEF.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;QLCL2015_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Windows Kits\8.1\Include\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>flieDEF.def</ModuleDefinitionFile>
+      <OutputFile>C:\QLCL GXD\x86\ToolQLCL.dll</OutputFile>
+      <AdditionalDependencies>Database.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\CODE\_QLCL 9.0\QLCL2015\Database\x32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;QLCL2015_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>flieDEF.def</ModuleDefinitionFile>
+      <OutputFile>C:\QLCL GXD\ToolQLCL.dll</OutputFile>
+      <AdditionalDependencies>Database.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\CODE\_QLCL 9.0\QLCL2015\Database\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="cls_main.cpp" />
+    <ClCompile Include="ColorEdit.cpp" />
+    <ClCompile Include="ColorStatic.cpp" />
+    <ClCompile Include="ComboBoxExt.cpp" />
+    <ClCompile Include="ComboBoxExtList.cpp" />
+    <ClCompile Include="Dg_In_ho_so.cpp" />
+    <ClCompile Include="Dlg_all_mauvl.cpp" />
+    <ClCompile Include="Dlg_all_tieuchuan.cpp" />
+    <ClCompile Include="Dlg_AutoSTT_HSNT.cpp" />
+    <ClCompile Include="Dlg_ChangeLM3.cpp" />
+    <ClCompile Include="Dlg_Chen_dong.cpp" />
+    <ClCompile Include="Dlg_ChonCSDLVLCV.cpp" />
+    <ClCompile Include="Dlg_Chonngay_paste.cpp" />
+    <ClCompile Include="Dlg_Cpys.cpp" />
+    <ClCompile Include="Dlg_Create_Tieude.cpp" />
+    <ClCompile Include="Dlg_dsach_ctieu.cpp" />
+    <ClCompile Include="Dlg_importpic.cpp" />
+    <ClCompile Include="Dlg_ktra_ngaynghi.cpp" />
+    <ClCompile Include="Dlg_ktrDownload.cpp" />
+    <ClCompile Include="Dlg_listNKyMDB.cpp" />
+    <ClCompile Include="Dlg_Luu_DMCV.cpp" />
+    <ClCompile Include="Dlg_luu_Hso.cpp" />
+    <ClCompile Include="Dlg_manager_wb.cpp" />
+    <ClCompile Include="Dlg_move_dulieu.cpp" />
+    <ClCompile Include="Dlg_NameSheet.cpp" />
+    <ClCompile Include="Dlg_NhomBangmau.cpp" />
+    <ClCompile Include="Dlg_NhomkyBB.cpp" />
+    <ClCompile Include="Dlg_Nky_BangNLTB.cpp" />
+    <ClCompile Include="Dlg_Nky_Hinhanh.cpp" />
+    <ClCompile Include="Dlg_Nky_Noidung.cpp" />
+    <ClCompile Include="Dlg_Nky_Thoitiet.cpp" />
+    <ClCompile Include="Dlg_noidungppktra.cpp" />
+    <ClCompile Include="Dlg_Open_DMCV.cpp" />
+    <ClCompile Include="Dlg_Open_DSVL.cpp" />
+    <ClCompile Include="Dlg_open_progress.cpp" />
+    <ClCompile Include="Dlg_Printer.cpp" />
+    <ClCompile Include="Dlg_print_nhatky.cpp" />
+    <ClCompile Include="Dlg_Qclmau.cpp" />
+    <ClCompile Include="Dlg_QCLMBetong.cpp" />
+    <ClCompile Include="Dlg_Qly_image_nky.cpp" />
+    <ClCompile Include="Dlg_Quanly_NDNK.cpp" />
+    <ClCompile Include="Dlg_Sapxepcviec.cpp" />
+    <ClCompile Include="Dlg_sapxepIn.cpp" />
+    <ClCompile Include="Dlg_Setup_Print.cpp" />
+    <ClCompile Include="Dlg_sort_dmhs.cpp" />
+    <ClCompile Include="Dlg_Thaydoimau.cpp" />
+    <ClCompile Include="Dlg_Themtieuchuan.cpp" />
+    <ClCompile Include="Dlg_ThuvienTL.cpp" />
+    <ClCompile Include="Dlg_TH_Cptuvan.cpp" />
+    <ClCompile Include="Dlg_TimeDM.cpp" />
+    <ClCompile Include="Dlg_Timer.cpp" />
+    <ClCompile Include="Dlg_trauu_tieuchuan.cpp" />
+    <ClCompile Include="Dlg_Viewbangmau.cpp" />
+    <ClCompile Include="Dlg_XuatbangKlg.cpp" />
+    <ClCompile Include="FileFinder.cpp" />
+    <ClCompile Include="FolderDlg.cpp" />
+    <ClCompile Include="frm_QuycachOld.cpp" />
+    <ClCompile Include="funct.cpp" />
+    <ClCompile Include="HookMouse.cpp" />
+    <ClCompile Include="LaymauNgang.cpp" />
+    <ClCompile Include="ListCtrlEx.cpp" />
+    <ClCompile Include="MsgHook.cpp" />
+    <ClCompile Include="MultiFileOpenDialog.cpp" />
+    <ClCompile Include="NumSpinCtrl.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PictureCtrl.cpp" />
+    <ClCompile Include="ScrollEdit.cpp" />
+    <ClCompile Include="SeachCG.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TextProgressCtrl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="flieDEF.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="cls_main.h" />
+    <ClInclude Include="CMemDCEx.h" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorEdit.h" />
+    <ClInclude Include="ColorStatic.h" />
+    <ClInclude Include="ComboBoxExt.h" />
+    <ClInclude Include="ComboBoxExtList.h" />
+    <ClInclude Include="Connection.h" />
+    <ClInclude Include="Dg_In_ho_so.h" />
+    <ClInclude Include="Dlg_all_mauvl.h" />
+    <ClInclude Include="Dlg_all_tieuchuan.h" />
+    <ClInclude Include="Dlg_AutoSTT_HSNT.h" />
+    <ClInclude Include="Dlg_ChangeLM3.h" />
+    <ClInclude Include="Dlg_Chen_dong.h" />
+    <ClInclude Include="Dlg_ChonCSDLVLCV.h" />
+    <ClInclude Include="Dlg_Chonngay_paste.h" />
+    <ClInclude Include="Dlg_Cpys.h" />
+    <ClInclude Include="Dlg_Create_Tieude.h" />
+    <ClInclude Include="Dlg_dsach_ctieu.h" />
+    <ClInclude Include="Dlg_importpic.h" />
+    <ClInclude Include="Dlg_ktra_ngaynghi.h" />
+    <ClInclude Include="Dlg_ktrDownload.h" />
+    <ClInclude Include="Dlg_listNKyMDB.h" />
+    <ClInclude Include="Dlg_Luu_DMCV.h" />
+    <ClInclude Include="Dlg_luu_Hso.h" />
+    <ClInclude Include="Dlg_manager_wb.h" />
+    <ClInclude Include="Dlg_move_dulieu.h" />
+    <ClInclude Include="Dlg_NameSheet.h" />
+    <ClInclude Include="Dlg_NhomBangmau.h" />
+    <ClInclude Include="Dlg_NhomkyBB.h" />
+    <ClInclude Include="Dlg_Nky_BangNLTB.h" />
+    <ClInclude Include="Dlg_Nky_Hinhanh.h" />
+    <ClInclude Include="Dlg_Nky_Noidung.h" />
+    <ClInclude Include="Dlg_Nky_Thoitiet.h" />
+    <ClInclude Include="Dlg_noidungppktra.h" />
+    <ClInclude Include="Dlg_Open_DMCV.h" />
+    <ClInclude Include="Dlg_Open_DSVL.h" />
+    <ClInclude Include="Dlg_open_progress.h" />
+    <ClInclude Include="Dlg_Printer.h" />
+    <ClInclude Include="Dlg_print_nhatky.h" />
+    <ClInclude Include="Dlg_Qclmau.h" />
+    <ClInclude Include="Dlg_QCLMBetong.h" />
+    <ClInclude Include="Dlg_Qly_image_nky.h" />
+    <ClInclude Include="Dlg_Quanly_NDNK.h" />
+    <ClInclude Include="Dlg_Sapxepcviec.h" />
+    <ClInclude Include="Dlg_sapxepIn.h" />
+    <ClInclude Include="Dlg_Setup_Print.h" />
+    <ClInclude Include="Dlg_sort_dmhs.h" />
+    <ClInclude Include="Dlg_Thaydoimau.h" />
+    <ClInclude Include="Dlg_Themtieuchuan.h" />
+    <ClInclude Include="Dlg_ThuvienTL.h" />
+    <ClInclude Include="Dlg_TH_Cptuvan.h" />
+    <ClInclude Include="Dlg_TimeDM.h" />
+    <ClInclude Include="Dlg_Timer.h" />
+    <ClInclude Include="Dlg_trauu_tieuchuan.h" />
+    <ClInclude Include="Dlg_Viewbangmau.h" />
+    <ClInclude Include="Dlg_XuatbangKlg.h" />
+    <ClInclude Include="EasySize.h" />
+    <ClInclude Include="FileFilter.h" />
+    <ClInclude Include="FileFinder.h" />
+    <ClInclude Include="FolderDlg.h" />
+    <ClInclude Include="frm_QuycachOld.h" />
+    <ClInclude Include="funct.h" />
+    <ClInclude Include="1_Info.h" />
+    <ClInclude Include="HookMouse.h" />
+    <ClInclude Include="LaymauNgang.h" />
+    <ClInclude Include="ListCtrlEx.h" />
+    <ClInclude Include="MsgHook.h" />
+    <ClInclude Include="msolib.h" />
+    <ClInclude Include="MultiFileOpenDialog.h" />
+    <ClInclude Include="NumSpinCtrl.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="PictureCtrl.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScrollEdit.h" />
+    <ClInclude Include="SeachCG.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StrUtil.h" />
+    <ClInclude Include="TextProgressCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QLCL2015.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="iconqlcl.ico" />
+    <Image Include="printsetup1.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="QLCL2015.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
